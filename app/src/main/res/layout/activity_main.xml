@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:src="@drawable/person"
+        android:elevation="3dp"
+        android:layout_margin="10dp"
+        />
+    <View
+        android:id="@+id/topView"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@color/colorPrimary"/>
+    <View
+        android:id="@+id/wave"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@+id/topView"
+        android:background="@drawable/ic_wave"
+        />
+    <EditText
+        android:id="@+id/emailText"
+        android:layout_marginTop="40dp"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/wave"
+        android:drawableStart="@drawable/ic_baseline_email_24"
+        android:layout_centerHorizontal="true"
+        android:hint="Email"
+        android:paddingStart="10dp"
+        android:background="@drawable/rounded_edit_text"
+        android:drawablePadding="10dp"/>
+
+    <EditText
+        android:id="@+id/passText"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/emailText"
+        android:layout_marginTop="20dp"
+        android:drawableStart="@drawable/password"
+        android:background="@drawable/rounded_edit_text"
+        android:hint="Password"
+        android:paddingStart="10dp"
+        />
+    <Button
+        android:id="@+id/singIn"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:background="@drawable/round_bt"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/passText"
+        android:text="Sign In"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:layout_marginTop="40dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/singIn"
+        android:layout_marginTop="20dp"
+        android:text="Forgot Password?"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/colorPrimary"
+        android:textSize="15sp"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/singIn"
+            android:layout_marginTop="70dp"
+            android:orientation="horizontal"
+            android:layout_centerHorizontal="true">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/google"/>
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="40dp"
+                android:layout_marginLeft="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/facebook"/>
+
+        </LinearLayout>
+
+
+
+
+
+
+        </RelativeLayout>
